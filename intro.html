@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plunder & Points - Recruitment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1> Plunder & Points </h1>
+        <p>Sign the Articles of Agreement to join the crew!</p>
+    </header>
+
+    <main>
+        <form id="playerForm" action="game.html" method="GET" novalidate>
+            <fieldset>
+                <legend>Crew Member Details</legend>
+                
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+                <span id="firstNameErr" class="err-text"></span>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+                <span id="lastNameErr" class="err-text"></span>
+
+                <label for="userName">Pirate Alias (Username):</label>
+                <input type="text" id="userName" name="userName">
+                <span id="userNameErr" class="err-text"></span>
+
+                <label for="phone">Signal Number (Phone):</label>
+                <input type="tel" id="phone" name="phone">
+                <span id="phoneErr" class="err-text"></span>
+
+                <label for="city">Home Port (City):</label>
+                <input type="text" id="city" name="city">
+                <span id="cityErr" class="err-text"></span>
+
+                <label for="email">Message Bird (Email):</label>
+                <input type="email" id="email" name="email">
+                <span id="emailErr" class="err-text"></span>
+
+                <button type="submit" id="btnBoard">Board the Ship!</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Christian Acero - Heritage College</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.21.0/dist/jquery.validate.min.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>

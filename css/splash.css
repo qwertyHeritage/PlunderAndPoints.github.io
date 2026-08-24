@@ -1,0 +1,49 @@
+.splash-body {
+    background-color: #1a252f;
+    overflow: hidden;
+    color: #f1c40f;
+}
+
+#splash-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Spinning Coin */
+.spinning-coin {
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    border: 3px solid #b8860b;
+    margin: 0 auto;
+    animation: spin 2s linear infinite;
+}
+
+#splash-title {
+    font-size: 4rem;
+    position: relative;
+    opacity: 0;
+    text-align: center;
+    font-family: 'Pirata One', cursive, serif;
+    color: #f1c40f;
+    animation: titleGlow 2s ease-in-out infinite alternate;
+}
+
+#splashCanvas {
+    background: transparent;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+@keyframes titleGlow {
+    from { text-shadow: 0 0 5px #fff, 0 0 10px #f1c40f; }
+    to { text-shadow: 0 0 20px #fff, 0 0 30px #e67e22; }
+}

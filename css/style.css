@@ -1,0 +1,130 @@
+body {
+    background-color: #f4ecd8;
+    color: #2c3e50;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #1a252f; 
+    color: #f1c40f;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    background: white;
+    padding: 2rem;
+    border: 5px solid #8e44ad;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #ccc;
+    width: 100%;
+    max-width: 400px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e74c3c;
+}
+
+.err-text {
+    display: block;
+    color: #c0392b;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    min-height: 1em;
+}
+
+input.invalid {
+    border: 2px solid #c0392b;
+}
+
+.pirate-sidebar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border: 2px solid #5d4037;
+    border-radius: 5px;
+    width: 200px;
+}
+
+header h1 {
+    font-family: 'Antique Olive', 'Georgia', serif;
+    color: #f1c40f;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+}
+
+/* Tablet (768px) */
+@media (max-width: 991px) {
+    form {
+        max-width: 500px;
+        padding: 2.5rem;
+    }
+    .pirate-sidebar {
+        position: static;
+        margin: 20px auto;
+        max-width: 500px;
+    }
+    main {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+/* Desktop (992px) */
+@media (min-width: 992px) {
+    form {
+        max-width: 600px;
+    }
+    .pirate-sidebar {
+        position: absolute;
+        top: 120px;
+        left: 30px;
+        width: 250px;
+    }
+}
+
+/* Large Desktop (1200px) */
+@media (min-width: 1200px) {
+    #splash-container, main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #splashCanvas {
+        width: 800px;
+    }
+}

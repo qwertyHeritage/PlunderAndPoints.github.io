@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Rush Game</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+    <h1>Plunder & Points</h1>
+    </header>
+    <div id="crew-info" class="pirate-sidebar"></div>
+    <main>
+      <section id="game-setup">
+      <h2>Prepare for the Voyage</h2>
+      <form id="roundForm">
+        <label for="numRounds">Number of Rounds (1-11):</label>
+        <input type="text" id="numRounds" placeholder="Enter rounds...">
+        <span id="roundError" class="err-text"></span>
+        <button type="submit" id="btnStartGame">Set Sail!</button>
+      </form>
+      </section>
+
+      <section id="game-arena" style="display: none;">
+        <div id="dice-display">
+            <img id="die-img" src="images/die1.png" alt="Dice" width="100">
+        </div>
+        
+        <div id="game-controls">
+            <button id="btnRoll">Roll the Bones!</button>
+            <button id="btnHold">Secure the Gold (Hold)</button>
+        </div>
+
+        <div id="score-board">
+            <p>Your Gold: <span id="p1-score">0</span></p>
+            <p>Computer Gold: <span id="p2-score">0</span></p>
+            <p id="round-tracker">Round: 1</p>
+        </div>
+
+        <div id="game-messages" class="pirate-scroll"></div>
+
+        <button id="btnLeave" class="btn-danger">Abandon Ship</button>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Christian Acero - Heritage College</p>
+      <p>Dice images: Mariquita vector - Adobe stock</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/game.js"></script>
+  </body>
+</html>
